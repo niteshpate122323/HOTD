@@ -1,0 +1,43 @@
+.video-container {
+    width: 100%;
+}
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+#teamName {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.team-image {
+    width: 300px;
+}
+
+#selectedTeam {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: wheat;
+}

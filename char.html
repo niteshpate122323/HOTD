@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Falling Fruits</title>
+  <style>
+    body {
+      overflow: hidden;
+    }
+    img {
+      width: 10%;
+    }
+    .fruit {
+      position: absolute;
+      transform: translateY(-100%);
+      animation: fall 3s ease forwards;
+    }
+    @keyframes fall {
+      0% {
+        top: -100px;
+      }
+      100% {
+        top: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="fruit1.png" alt="Fruit 1" class="fruit">
+    <img src="fruit2.png" alt="Fruit 2" class="fruit">
+    <img src="fruit3.png" alt="Fruit 3" class="fruit">
+    <img src="fruit4.png" alt="Fruit 4" class="fruit">
+    <img src="fruit5.png" alt="Fruit 5" class="fruit">
+  </div>
+
+  <script>
+  
+  const leftValues = [20, 40, 60, 80, 10];
+  const fruits = document.querySelectorAll('img.fruit');
+  fruits.forEach((fruit, index) => {
+    fruit.style.left = leftValues[index] + '%';
+    fruit.style.animationDelay = index * 0.1 + 's';
+  });
+
+  </script>
+</body>
+</html>

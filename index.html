@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of the Dragon</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <a href="#top"></a>
+
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="dragon_landing-page_video.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <img src="tt.b609ac3d.png">
+        </div>
+    </div>
+
+    <!-- <div class="button-container" >
+        <a href="#top" class="sticky-button audio-button">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        <button class="sticky-button audio-button">
+            <audio id="myAudio" src="House of the Dragon_ Season 2 Soundtrack  Main Title (from Game of Thrones) - Ramin Djawadi.mp3"></audio>
+            <i id="soundIcon" class="fas fa-volume-mute" onclick="togglePlay()"></i></li>
+        </button>
+        <a href="#heroSection" class="sticky-button audio-button">
+            <i class="fa-solid fa-dragon"></i>
+        </a>
+        <a href="#map" class="sticky-button audio-button">
+            <i class="fa-regular fa-map"></i>
+        </a>
+        <a href="#tra" class="sticky-button audio-button">
+            <i class="fa-solid fa-film"></i>
+        </a>
+        <a href="#char" class="sticky-button audio-button">
+            <i class="fa-solid fa-database"></i>
+        </button>
+    </div> -->
+
+    <div class="container-4" id="char">
+        <div class="text-side">
+            <h1>Featured Cast</h1>
+            <p>See the updated list of House of the Dragon cast and characters below.</p>
+            <a href="char.html">
+                <button class="transparent-button">Explore</button>
+            </a>
+        </div>
+        <div class="slider-container">
+            <div class="cards">
+                <div class="card">
+                    <img src="daemon-targaryen.avif" alt="Daemon Targaryen">
+                    <h2>Matt Smith</h2>
+                    <p>Daemon Targaryen</p>
+                </div>
+                <div class="card">
+                    <img src="rhaenyra-targaryen.avif" alt="Rhaenyra Targaryen">
+                    <h2>Emma D’Arcy</h2>
+                    <p>Rhaenyra Targaryen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero" id="heroSection">
+        <div class="content">
+            <h1>Dragon Index</h1>
+            <p>See the full list of House of the Dragons and there powers.</p>
+            <a href="full.html" class="btn">Explore</a>
+        </div>
+    </div>
+
+    <div class="map" id="map">
+        <img src="slice2.c61d06ed.png" usemap="#image-map">
+        <map name="image-map">
+            <area target="_blank" alt="KING'S LANDING" title="KING'S LANDING" href="https://youtu.be/7TtdskiUdlE?si=G7YR22cHfDSdJU8i" coords="354,859,37" shape="circle">
+            <area target="_blank" alt="DRIFTMARK" title="DRIFTMARK" href="https://youtu.be/BBUhAi_QXpE?si=JG2MGyEg-QzmhERo" coords="537,759,25" shape="circle">
+            <area target="_blank" alt="DRAGONSTONE" title="DRAGONSTONE" href="https://youtu.be/5_tZT5j0rDA?si=2YT01lFtqDo0csO3" coords="586,736,22" shape="circle">
+            <area target="_blank" alt="HARRENHAL" title="HARRENHAL" href="https://youtu.be/MuJzLR-xpZk?si=mUmmL2IJF9XSz9C-" coords="175,615,29" shape="circle">
+        </map>
+
+    <div class="text">
+        <h1>Map Of The Known World</h1>
+        <p>Dive even deeper into the world of House of the Dragon to learn more about the interactive map of Westeros and Essos.</p>
+    </div>
+    </div>
+
+     <div class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to My Website</h1>
+            <p>Your journey starts here</p>
+            <button class="transparent-button0">Learn More</button>
+        </div>
+    </div>
+
+    <!-- <div class="container0">
+        <div class="image0">
+            <img src="house-of-the-dragon-mid-season-2.avif" alt="Your Image">
+        </div>
+        <div class="content0">
+            <h1>Your Heading</h1>
+            <p>Your text goes here.</p>
+            <button class="transparent-button">Click Me</button>
+        </div>
+    </div> -->
+
+    
+     <footer class="footer">
+        <img src="tt.b609ac3d.png" alt="Footer Image">
+        <div class="copyright">
+        © 2024 Home Box Office, Inc. All Rights Reserved.
+        </div>
+    </footer>
+
+<script>
+
+    function togglePlay() {
+        var audio = document.getElementById('myAudio');
+        var icon = document.getElementById('soundIcon');
+        audio.paused ? audio.play() : audio.pause();
+        icon.classList.toggle('fa-volume-up');
+        icon.classList.toggle('fa-volume-mute');
+    }
+
+    const cursor = document.querySelector('.cursor');
+    window.addEventListener('mousemove', (event) => {
+        cursor.style.top = event.clientY + 'px';
+        cursor.style.left = event.clientX + 'px';
+    });
+
+</script>
+
+</body>
+</html>

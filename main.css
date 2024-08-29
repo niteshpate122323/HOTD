@@ -1,0 +1,281 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.video-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        margin: 0;
+    }
+    
+    .content img {
+        width: 100%;
+    }
+}
+
+.trailer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    color: black;
+}
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text {
+    flex: 1;
+    padding: 20px;
+}
+.text h1 {
+    margin: 0;
+    font-size: 2em;
+}
+.text p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.footer {
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+}
+.footer img {
+    width: 500px;
+    margin-bottom: 10px;
+}
+.footer .flex-container  {
+    margin: 20px;
+}
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('house-of-the-dragon-s01-e03-episodic-1920x1080.jpg');
+}
+.hero {
+    animation: fade-in linear;
+    animation-timeline: view();
+}
+@keyframes fade-in {
+    from {scale: 0.7;} to { scale: 1;}
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.container-4 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.text-side {
+    flex: 1;
+    padding: 20px;
+}
+.text-side h1 {
+    margin-bottom: 10px;
+    color: black;
+}
+.text-side p {
+    margin-bottom: 20px;
+    color: black;
+}
+.transparent-button {
+    background-color: transparent;
+    border: px solid #000;
+    padding: 10px 20px;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    background-color: black;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+}
+.card h2 {
+    color: white;
+}
+.card p {
+    color: gray;
+    font-style: italic;
+}
+
+
+.button-container {
+    position: fixed;
+    top: 20px; 
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.sticky-button {
+    background-color: transparent;
+    color: white; 
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.hero-image {
+    background-image: url('house-of-the-dragon-s2-ka-1920.avif');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.transparent-button0 {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+.container0 {
+    display: flex;
+    align-items: center;
+}
+.image0 {
+    flex: 1;
+    padding: 10px;
+}
+.content0 {
+    flex: 2;
+    padding: 10px;
+    color: #000;
+}
+
+.container-4 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .text-side {
+        flex: 1;
+        padding: 20px;
+    }
+    .text-side h1 {
+        margin-bottom: 10px;
+        color: black;
+    }
+    .text-side p {
+        margin-bottom: 20px;
+        color: black;
+    }
+    .transparent-button {
+        background-color: transparent;
+        border: px solid #000;
+        padding: 10px 20px;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card {
+        background-color: black;
+        text-align: center;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card h2 {
+        color: white;
+    }
+    .card p {
+        color: gray;
+        font-style: italic;
+    }
+
+    .cursor {
+        position: fixed;
+        pointer-events: none;
+        width: 80px;
+        height: 68px;
+        background-image: url("ezgif-2-9f3ce5fe4d.gif");
+        background-size: cover;
+        z-index: 1;
+    }
